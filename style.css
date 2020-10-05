@@ -1,0 +1,87 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(45deg, hsla(340, 100%,55%, 1) 0%, hsla(340, 100%,55%, 0) 70%),
+				linear-gradient(135deg, hsla(255, 95%,50%, 1) 10%, hsla(255, 95%,50%, 0) 80%),
+				linear-gradient(225deg, hsla(140, 90%,50%,1) 10%, hsla(140, 90%,50%,0) 80%),
+				linear-gradient(315deg, hsla(35, 95%,55%,1) 100%, hsla(25, 95%,55%,0) 70%);
+}
+
+.calculator {
+	width: 320px;
+	height: 455px;
+	background: linear-gradient(45deg, hsla(340, 100%,55%, 1) 0%, hsla(340, 100%,55%, 0) 70%),
+				linear-gradient(135deg, hsla(255, 95%,50%, 1) 10%, hsla(255, 95%,50%, 0) 80%),
+				linear-gradient(225deg, hsla(140, 90%,50%,1) 10%, hsla(140, 90%,50%,0) 80%),
+				linear-gradient(315deg, hsla(35, 95%,55%,1) 100%, hsla(25, 95%,55%,0) 70%);
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 1px rgba(0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	transform: scale(0);
+	transition: 0.4s linear;
+}
+
+.popup {
+	transform: scale(1);
+}
+
+.result {
+	height: 120px;
+}
+
+.keyboard {
+	height: 400px;
+}
+
+#history {
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #191919;
+}
+
+#output-value {
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 25px;
+}
+
+.operator, .number, .empty {
+	height: 40px;
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s linear;
+}
+
+.number, .empty {
+	background-color: rgba(18, 18, 26, 0.1);
+	cursor: pointer;
+}
+
+.operator:active, .number:active {
+	font-size: 20px;
+
+}
+
+.empty:focus, .operator:focus, .number:focus {
+	outline: none;
+
+}
